@@ -9,5 +9,6 @@ import problem1.node.TreeNode;
 // to implement BinarySearchTree
 public class MyBinarySearchTree<E> {
     private TreeNode<E> root;
-    public int numberleftchid=0;
+    public int numberLeftChid=0;
+    private int maxLevel=1;
 }
