@@ -19,5 +19,6 @@ public class MyMain {
         myBinarySearchTree.add(5);
         myBinarySearchTree.add(6);
         myBinarySearchTree.print();
+        System.out.println("nodes not have a left child="+myBinarySearchTree.numberLeftChild);
     }
 }
