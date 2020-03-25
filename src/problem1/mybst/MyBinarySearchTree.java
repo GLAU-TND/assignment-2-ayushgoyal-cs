@@ -44,5 +44,8 @@ public class MyBinarySearchTree<E> {
         printLeft(node.getLeft(), level + 1);
         printLeft(node.getRight(), level + 1);
     }
-
+    public void print() {
+        printLeft(root, 1);
+        System.out.println();
+    }
     }
