@@ -18,5 +18,6 @@ public class MyMain {
         myBinarySearchTree.add(4);
         myBinarySearchTree.add(5);
         myBinarySearchTree.add(6);
+        myBinarySearchTree.print();
     }
 }
