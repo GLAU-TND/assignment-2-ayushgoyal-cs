@@ -15,4 +15,10 @@ public class MyBinarySearchTree<E> {
     public TreeNode<E> getRoot() {
         return root;
     }
+    public boolean add(E data){
+        return false;
+    }
+    private TreeNode<E> addRecursive(TreeNode<E> currentNode,E data){
+        return currentNode;
+    }
 }
