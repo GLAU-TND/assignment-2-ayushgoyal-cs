@@ -16,9 +16,17 @@ public class MyBinarySearchTree<E> {
         return root;
     }
     public boolean add(E data){
+        root=addRecursive(root,data);
         return false;
     }
     private TreeNode<E> addRecursive(TreeNode<E> currentNode,E data){
+        if(currentNode==null){
+            return new TreeNode<>(data);
+        }else if((Integer) data<(Integer) currentNode.getData()) {
+            currentNode.setLeft(addRecursive(currentNode.getLeft(), data));
+        }else if((Integer)data>(Integer)currentNode.getData()){
+            currentNode.setRight(addRecursive(currentNode.getRight(), data));
+        }
         return currentNode;
     }
 }
