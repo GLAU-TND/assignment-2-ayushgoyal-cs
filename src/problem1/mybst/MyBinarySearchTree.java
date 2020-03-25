@@ -9,4 +9,5 @@ import problem1.node.TreeNode;
 // to implement BinarySearchTree
 public class MyBinarySearchTree<E> {
     private TreeNode<E> root;
+    public int numberleftchid=0;
 }
