@@ -19,6 +19,9 @@ public class MyMain {
         myBinarySearchTree.add(5);
 
     }
+    public static void traversePostOrder(TreeNode<Integer> currentNode) {
+
+    }
 
 }
 
