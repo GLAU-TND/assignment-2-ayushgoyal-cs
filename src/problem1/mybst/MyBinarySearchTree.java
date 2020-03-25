@@ -29,7 +29,20 @@ public class MyBinarySearchTree<E> {
         }
         return currentNode;
     }
-    private void printLeft(TreeNode<E> node,int level){
+    private void printLeft(TreeNode<E> node,int level) {
+        if (node == null) {
+            return;
+        }
+        if (maxLevel < level) {
+            System.out.print(node.getData() + " ");
+        }
+        maxLevel = level;
+        if (node.getLeft() == null) {
+            numberLeftChild++;
+            maxLevel++;
+        }
+        printLeft(node.getLeft(), level + 1);
+        printLeft(node.getRight(), level + 1);
+    }
 
     }
-}
