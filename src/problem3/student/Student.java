@@ -33,4 +33,9 @@ public class Student {
     public String toString() {
         return rollNo + "." + name;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 }
