@@ -19,8 +19,12 @@ public class MyMain {
         myBinarySearchTree.add(5);
 
     }
-    public static void traversePostOrder(TreeNode<Integer> currentNode) {
-
+    public static void traversePreOrder(TreeNode<Integer> currentNode) {
+        if (currentNode != null) {
+            System.out.print(currentNode.getData() + " ");
+            traversePreOrder(currentNode.getLeft());
+            traversePreOrder(currentNode.getRight());
+        }
     }
 
 }
