@@ -12,4 +12,12 @@ public class Student {
         this.rollNo = rollNo;
         this.name = name;
     }
+
+    public int getRollNo() {
+        return rollNo;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
