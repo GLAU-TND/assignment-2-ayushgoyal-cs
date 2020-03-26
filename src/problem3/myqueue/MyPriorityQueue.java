@@ -55,7 +55,10 @@ public class MyPriorityQueue<E> implements ADT<E> {
 
     @Override
     public E remove() {
-        return null;
+        E data = front.getData();
+        front = front.getNext();
+        size--;
+        return data;
     }
 
     @Override
