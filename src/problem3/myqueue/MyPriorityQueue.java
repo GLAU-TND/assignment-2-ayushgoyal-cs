@@ -6,5 +6,5 @@
  */
 package problem3.myqueue;
 
-public class MyPriorityQueue {
+public class MyPriorityQueue<E> {
 }
