@@ -26,6 +26,10 @@ public class MyMain {
             traversePreOrder(currentNode.getRight());
         }
     }
+    public static void traversePostOrder(TreeNode<Integer> currentNode) {
+
+    }
+
 
 }
 
