@@ -18,5 +18,5 @@ public class MyMain {
         myPriorityQueue.add(new Student(3, "ayush"));
         myPriorityQueue.add(new Student(2, "archit"));
         System.out.println(myPriorityQueue);
-    }
+     }
 }
