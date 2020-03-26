@@ -15,7 +15,8 @@ public class MyMain {
     public static void main(String[] args) {
         MyPriorityQueue<Student> myPriorityQueue = new MyPriorityQueue<>();
         myPriorityQueue.add(new Student(1, "qwerty"));
-        myPriorityQueue.add(new Student(2, "ayush"));
-        myPriorityQueue.add(new Student(3, "archit"));
+        myPriorityQueue.add(new Student(3, "ayush"));
+        myPriorityQueue.add(new Student(2, "archit"));
+        System.out.println(myPriorityQueue);
     }
 }
