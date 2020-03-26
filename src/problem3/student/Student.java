@@ -45,4 +45,9 @@ public class Student {
         if (obj == null || getClass() != obj.getClass()) return false;
         return flag;
     }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
 }
