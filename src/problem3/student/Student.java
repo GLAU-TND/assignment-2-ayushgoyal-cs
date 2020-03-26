@@ -1,5 +1,7 @@
 package problem3.student;
 
+import java.util.Objects;
+
 public class Student {
     private int rollNo;
     private String name;
@@ -48,6 +50,6 @@ public class Student {
 
     @Override
     public int hashCode() {
-        return super.hashCode();
+        return Objects.hash(rollNo);
     }
 }
