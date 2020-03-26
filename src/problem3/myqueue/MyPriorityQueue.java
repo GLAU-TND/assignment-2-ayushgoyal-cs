@@ -43,7 +43,14 @@ public class MyPriorityQueue<E> implements ADT<E> {
 
     @Override
     public void add(E data) {
-        Node<E> node = new Node<>(data);
+        if (size == 0) {
+            Node<E> node = new Node<E>(data, null);
+            front = node;
+            rear = node;
+            size++;
+        } else {
+            sortedAdd(data);
+        }
     }
 
     @Override
