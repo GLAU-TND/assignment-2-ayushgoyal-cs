@@ -20,4 +20,12 @@ public class Student {
     public String getName() {
         return name;
     }
+
+    public void setRollNo(int rollNo) {
+        this.rollNo = rollNo;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
