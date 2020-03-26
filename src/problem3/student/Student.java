@@ -36,6 +36,13 @@ public class Student {
 
     @Override
     public boolean equals(Object obj) {
-        return super.equals(obj);
+        boolean flag = false;
+        Student student = (Student) obj;
+        if (rollNo > student.rollNo) {
+            return true;
+        }
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        return flag;
     }
 }
