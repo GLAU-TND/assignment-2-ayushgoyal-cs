@@ -17,7 +17,7 @@ public class MyBinarySearchTree<E> {
     }
     public boolean add(E data){
         root=addRecursive(root,data);
-        return false;
+        return true;
     }
     private TreeNode<E> addRecursive(TreeNode<E> currentNode,E data){
         if(currentNode==null){
