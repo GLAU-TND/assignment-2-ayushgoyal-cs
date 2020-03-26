@@ -8,8 +8,6 @@ package problem3.myqueue;
 
 import problem3.adt.ADT;
 import problem3.node.Node;
-
-import java.util.Queue;
 public class MyPriorityQueue<E> implements ADT<E> {
     private int size = 0;
     private Node<E> front;
@@ -65,5 +63,9 @@ public class MyPriorityQueue<E> implements ADT<E> {
     public E peek() {
         E data = front.getData();
         return data;
+    }
+
+    public String toString() {
+
     }
 }
