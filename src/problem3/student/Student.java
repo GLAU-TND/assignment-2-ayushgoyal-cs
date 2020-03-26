@@ -7,4 +7,9 @@ public class Student {
     public Student(int rollNo) {
         this.rollNo = rollNo;
     }
+
+    public Student(int rollNo, String name) {
+        this.rollNo = rollNo;
+        this.name = name;
+    }
 }
