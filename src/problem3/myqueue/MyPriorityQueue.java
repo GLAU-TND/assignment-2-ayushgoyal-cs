@@ -25,6 +25,9 @@ public class MyPriorityQueue<E> implements ADT<E> {
         }
         return response;
     }
+    private void sortedAdd(E data) {
+
+    }
 
     @Override
     public void add(E data) {
