@@ -39,7 +39,8 @@ public class MyQueue<E> implements ADT<E> {
 
     @Override
     public E peek() {
-        return null;
+        E data = front.getData();
+        return data;
     }
 
     @Override
