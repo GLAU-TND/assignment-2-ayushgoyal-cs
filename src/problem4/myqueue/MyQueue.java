@@ -31,7 +31,10 @@ public class MyQueue<E> implements ADT<E> {
 
     @Override
     public E dequeue() {
-        return null;
+        E data = front.getData();
+        front = front.getNext();
+        size--;
+        return data;
     }
 
     @Override
