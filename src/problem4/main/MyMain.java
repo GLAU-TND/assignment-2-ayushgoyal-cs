@@ -18,8 +18,8 @@ public class MyMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter elements which are added in binary search tree");
-        String s = sc.nextLine();
-        String[] ar = s.split(" ");
+        String str = sc.nextLine();
+        String[] ar = str.split(" ");
         MyBinarySearchTree<Integer> myBinarySearchTree = new MyBinarySearchTree<>();
         for (String s1 : ar) {
             myBinarySearchTree.add(Integer.parseInt(s1));
