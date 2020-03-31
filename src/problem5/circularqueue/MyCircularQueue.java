@@ -61,4 +61,35 @@ public class MyCircularQueue {
         } catch (NullPointerException ignored) {
         }
     }
+
+    public void remove(String name) {
+        tmp = front;
+        if (tmp.getStudent().getName().equals(name) && tmp.getStudent().getBacklog() == 0) {
+            tmp = front = front.getNext();
+        }
+        while (!tmp.getNext().getStudent().getName().equals(name)) {
+            tmp = tmp.getNext();
+            if (tmp == front)
+                return;
+        }
+        if (tmp.getStudent().getBacklog() == 0) {
+            tmp.setNext(tmp.getNext().getNext());
+        }
+
+    }
+
+    public void process(String name) {
+        tmp = front;
+        if (tmp.getStudent().getName().equals(name)) {
+            System.out.println(tmp.getStudent().toString());
+            System.out.println(tmp.getStudent().getBacklog() - tmp.getStudent().getApperingcount());
+        }
+        while (!tmp.getStudent().getName().equals(name)) {
+            tmp = tmp.getNext();
+            if (tmp == front)
+                return;
+        }
+        System.out.println(tmp.getStudent().toString());
+        System.out.println(tmp.getStudent().getBacklog() - tmp.getStudent().getApperingcount());
+    }
 }
