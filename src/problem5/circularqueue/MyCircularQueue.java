@@ -12,4 +12,26 @@ public class MyCircularQueue {
     private Node tmp;
     private Node end;
 
+    public MyCircularQueue() {
+        front = null;
+        tmp = null;
+        end = null;
+    }
+
+
+    public Node getFront() {
+        return front;
+    }
+
+    public void setFront(Node front) {
+        this.front = front;
+    }
+
+    public Node getTmp() {
+        return tmp;
+    }
+
+    public void setTmp(Node tmp) {
+        this.tmp = tmp;
+    }
 }
