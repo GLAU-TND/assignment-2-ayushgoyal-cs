@@ -6,6 +6,10 @@
  */
 package problem5.student;
 
-public class Student {
+import java.util.Scanner;
 
+public class Student {
+    private String name;
+    private int rollno, backlog, apperingcount;
+    private Scanner sc;
 }
