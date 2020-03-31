@@ -11,8 +11,6 @@ import problem5.node.Node;
 import problem5.student.Student;
 
 import java.util.Scanner;
-
-//executable class
 public class MyMain {
     public static void main(String[] args) {
         MyCircularQueue m = new MyCircularQueue();
